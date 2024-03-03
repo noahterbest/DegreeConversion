@@ -40,6 +40,14 @@ public class Conversion {
                 break;
             case 2:
                 toDD();
+
+                System.out.println(" ");
+                System.out.println("Would you like to convert another decimal degree? (y/n)");
+                answer = input.next();
+                if(answer.equals("y") || answer.equals("Y")){
+                    displayMenu();
+                    getChoice();
+                }
                 break;
             case 3:
                 System.out.println("Exit");
@@ -107,10 +115,10 @@ public class Conversion {
         }
         System.out.println(degrees + " " + minutes + " " + seconds + " " + direction);
         System.out.println(" ");
+
         //Conversion
         degrees = degrees + (minutes / 60) + (seconds / 3600);
         System.out.println("Decimal Degrees: " + degrees);
-
 
     }
 }
