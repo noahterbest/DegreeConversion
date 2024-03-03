@@ -1,3 +1,6 @@
+//Noah TerBest
+//CSC 1060
+
 import java.util.Scanner;
 public class Conversion {
     public static void main(String[] args) {
