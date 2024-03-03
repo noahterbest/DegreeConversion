@@ -105,9 +105,12 @@ public class Conversion {
             System.out.println("Enter Direction (N/S/E/W): ");
             direction = input.next();
         }
-
-        //maths
-
         System.out.println(degrees + " " + minutes + " " + seconds + " " + direction);
+        System.out.println(" ");
+        //Conversion
+        degrees = degrees + (minutes / 60) + (seconds / 3600);
+        System.out.println("Decimal Degrees: " + degrees);
+
+
     }
 }
